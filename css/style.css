@@ -1,0 +1,141 @@
+nav#navbar{
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.4);
+}
+header {
+    position: fixed;
+    top: 0;
+    min-height: 50px;
+    padding: 0px 0px;
+    padding-top: 0%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fdfdfd;
+  }
+  #main-doc {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 300px;
+  }
+  
+  #header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+  }
+
+  
+  @media (max-width: 650px) {
+    #main-doc {
+      margin-top: 120px;
+    }
+  }
+  #main-section {
+    display: grid;
+    grid-template-columns: minmax(300px , auto)1fr;   
+    grid-template-areas: "navbar mainContent";
+    grid-gap: 20px;
+}
+   
+ #navbar ul {
+    height: 88%;
+    padding: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#navbar li {
+    color: #112483;
+   
+    list-style: none;
+    position: relative;
+    width: 100%;
+} 
+/* #navbar a {
+    display: block;
+    padding: 10px 30px;
+    color: #4d4e53;
+    text-decoration: none;
+    cursor: pointer;
+} */
+nav#navbar a {
+    display: block;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: black;
+}
+main#main-doc {
+    grid-area: mainContent;
+}
+
+@media only screen and (max-width: 815px) {
+    /* For mobile phones: */
+    #navbar ul {
+      border: 1px solid;
+      height: 207px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    #main-doc {
+      margin-left: -10px;
+    }
+}
+
+
+  @media (max-width: 600px) {
+    header {
+      flex-wrap: wrap;
+    }
+  }
+  
+  body {
+    background-color: #ffffff;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  li {
+    list-style: circle;
+  }
+  
+  a {
+    color: #010101;
+    text-decoration: none;
+  }
+ 
+  .main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    height: 200px;
+    margin-top: 50px;
+  }
+  
+  .main-section > header {
+    margin-bottom: 20px;
+    word-wrap: break-word;
+  }
+
+  
+  @media (max-width: 650px) {
+    .main-section {
+      margin-top: 120px;
+    }
+  }

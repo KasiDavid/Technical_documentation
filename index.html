@@ -6,21 +6,185 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
 
+  
+
   <body>
+    <nav id="navbar">
+      <header>
+        JS Documentation
+      </header>
+      <ul>
+        <li>
+          <a href="#Introduction" class="nav-link">Introduction</a>
+        </li>
+        <li>
+          <a href="#What you should already know" class="nav-link">What you should already know</a>
+        </li>
+        <li>
+          <a href="#Javascript and Java" class="nav-link">Javascript and Java</a>
+        </li>
+        <li>
+          <a href="#Hello World" class="nav-link">Hello World</a>
+        </li>
+        <li>
+          <a href="#Variables" class="nav-link">Variables</a>
+        </li>
+        <li>
+          <a href="#Declaring variables" class="nav-link">Declaring variables</a>
+        </li>
+        <li>
+          <a href="#Variable scope" class="nav-link">Variable scope</a>
+        </li>
+        <li>
+          <a href="#Global variables" class="nav-link">Global variables</a>
+        </li>
+        <li>
+          <a href="#Constants" class="nav-link">Constants</a>
+        </li>
+        <li>
+          <a href="#Data types" class="nav-link">Data types</a>
+        </li>
+        <li>
+          <a href="#if...else statement" class="nav-link">if...else statement</a>
+        </li>
+        <li>
+          <a href="#while statement" class="nav-link">while statement</a>
+        </li>
+        <li>
+          <a href="#Function declaration" class="nav-link">Function declaration</a>
+        </li>
+        <li>
+          <a href="#Reference" class="nav-link">Reference</a>
+        </li>
+        
+      </ul>
+    </nav>
+    <div id = "main-doc">
+      <section id="Introduction" class="main-section">
+        <div id="header">
+          Introduction
+        </div>
+          <p>JavaScript is a cross-platform, object-oriented 
+            scripting language. It is a small and lightweight 
+            language. Inside a host environment (for example, 
+            a web browser), JavaScript can be connected to the 
+            objects of its environment to provide programmatic 
+            control over them.</p>
+
+            <p>JavaScript contains a standard library of 
+              objects, such as Array, Date, and Math, and a 
+              core set of language elements such as 
+              operators, control structures, and statements. 
+              Core JavaScript can be extended for a variety 
+              of purposes by supplementing it with additional objects; 
+              for example:</p>
+      </section>
+      <section id="What_you_should_already_know" class="main-section">
+        <div id="header">
+            What you should already know
+        </div>
+        <p>
+          This guide assumes you have the following basic background:
+        </p>
+        <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
+        <li>Good working knowledge of HyperText Markup Language (HTML).</li>
+
+      </section>
+      <section id="JavaScript_and_Java" class="main-section">
+        <div id="header">
+            JavaScript and Java
+        </div>
+        <p>JavaScript and Java are similar in some ways but 
+          fundamentally different in some others. The 
+          JavaScript language resembles Java but does not 
+          have Java's static typing and strong type checking. 
+          JavaScript follows most Java expression syntax, naming 
+          conventions and basic control-flow constructs which was 
+          the reason why it was renamed from LiveScript to JavaScript.</p>
+
+      </section>
+      <section id="Hello_world" class="main-section">
+        <div id="header">
+            Hello world
+        </div>
+        <p>To get started with writing JavaScript, open the Scratchpad 
+          and write your first "Hello world" JavaScript code:
+        </p>
+        <code>function greetMe(yourName) { alert("Hello " + yourName); }
+            greetMe("World");
+          </code>
+          <p>
+            Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!
+          </p>
+      </section>
+      
+      <section id="Declaring_variables" class="main-section">
+        <div id="header">
+            Declaring variables
+        </div>
+        <p>
+          You can declare a variable in three ways:
+        </p>
+        <p>
+          With the keyword var. For example,
+        </p>
+        <code>
+          var x = 42.
+        </code>
+        <p>
+          This syntax can be used to declare 
+          both local and global variables.
+        </p>
+        <p>
+          By simply assigning it a value. For example,
+        </p>
+        <code>
+          x = 42.
+        </code>
+        <p>
+          This always declares a global variable. It generates a 
+          strict JavaScript warning. You shouldn't use this variant.
+        </p>
+        <p>
+          With the keyword let. For example,
+        </p>
+        <code>
+          let y = 13.
+        </code>
+      </section>
+      <section id="Function_declarations" class="main-section">
+        <div id="header">
+          Function declarations
+        </div>
+        <p>
+          A function definition (also called a function declaration, 
+          or function statement) consists of the function keyword, 
+          followed by:
+        </p>
+        <li>
+          The name of the function.
+        </li>
+        <li>
+          A list of arguments to the function, 
+          enclosed in parentheses and separated by commas.
+        </li>
+        <li>
+          The JavaScript statements that define the function, 
+          enclosed in curly brackets, { }.
+        </li>
+        <p>
+          For example, the following code defines a simple 
+          function named square:
+        </p>
+        <code>
+          function square(number) { return number * number; }
+        </code>
+
+      </section>
+
+    </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    <!--
-
-    Hello Camper!
-
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    -->
     <script  src="js/index.js"></script>
   </body>
 </html>
